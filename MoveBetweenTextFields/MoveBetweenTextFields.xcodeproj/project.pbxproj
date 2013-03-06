@@ -21,6 +21,7 @@
 		03EBC0D116E01D780026A060 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EBC0D016E01D780026A060 /* ViewController.m */; };
 		03EBC0E416E7002B0026A060 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EBC0E316E6BA7E0026A060 /* OtherViewController.m */; };
 		03EBC0E716E702690026A060 /* ReversePushStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EBC0E616E702690026A060 /* ReversePushStoryboardSegue.m */; };
+		03EBC0F616E70B480026A060 /* UITextField+NextTextFieldProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EBC0F516E70B480026A060 /* UITextField+NextTextFieldProperty.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		03EBC0E316E6BA7E0026A060 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		03EBC0E516E702690026A060 /* ReversePushStoryboardSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReversePushStoryboardSegue.h; sourceTree = "<group>"; };
 		03EBC0E616E702690026A060 /* ReversePushStoryboardSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReversePushStoryboardSegue.m; sourceTree = "<group>"; };
+		03EBC0F416E70B480026A060 /* UITextField+NextTextFieldProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+NextTextFieldProperty.h"; sourceTree = "<group>"; };
+		03EBC0F516E70B480026A060 /* UITextField+NextTextFieldProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+NextTextFieldProperty.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				03EBC0C016E01D780026A060 /* AppDelegate.h */,
 				03EBC0C116E01D780026A060 /* AppDelegate.m */,
 				03EBC0C916E01D780026A060 /* MainStoryboard_iPhone.storyboard */,
+				03EBC0F416E70B480026A060 /* UITextField+NextTextFieldProperty.h */,
+				03EBC0F516E70B480026A060 /* UITextField+NextTextFieldProperty.m */,
 				03EBC0CC16E01D780026A060 /* MainStoryboard_iPad.storyboard */,
 				03EBC0CF16E01D780026A060 /* ViewController.h */,
 				03EBC0D016E01D780026A060 /* ViewController.m */,
@@ -192,6 +197,7 @@
 				03EBC0C216E01D780026A060 /* AppDelegate.m in Sources */,
 				03EBC0D116E01D780026A060 /* ViewController.m in Sources */,
 				03EBC0E716E702690026A060 /* ReversePushStoryboardSegue.m in Sources */,
+				03EBC0F616E70B480026A060 /* UITextField+NextTextFieldProperty.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +324,7 @@
 				03EBC0D616E01D780026A060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

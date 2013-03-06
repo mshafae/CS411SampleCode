@@ -10,4 +10,6 @@
 
 @interface UITextField (NextTextFieldProperty)
 
+@property (retain, nonatomic) UITextField* nextTextField;
+
 @end

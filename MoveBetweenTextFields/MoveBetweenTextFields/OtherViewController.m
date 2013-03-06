@@ -7,6 +7,7 @@
 //
 
 #import "OtherViewController.h"
+#import "UITextField+NextTextFieldProperty.h"
 
 @interface OtherViewController ()
 
@@ -30,46 +31,25 @@
   }
 }
 
-- (void)nextClicked: (UIBarButtonItem*) sender
+- (void)nextOrPreviousClicked: (UIBarButtonItem*) sender
 {
-  NSInteger tag = sender.tag;
-  if( tag == 0 ){
-    [tfA becomeFirstResponder];
-  }else{
-    [tfB becomeFirstResponder];
-  }
-}
-
-- (void)previousClicked: (UIBarButtonItem*) sender
-{
-  NSInteger tag = sender.tag;
-  if( tag == 0 ){
-    [tfA becomeFirstResponder];
-  }else{
-    [tfB becomeFirstResponder];
+  UITextField* next = self.activeTF.nextTextField;
+  if (next) {
+    [next becomeFirstResponder];
   }
 }
 
 - (void) doneClicked: (UIBarButtonItem*) sender
 {
   NSLog( @"done pressed resigning first respond for inputTextField; Touch event!" );
-  NSInteger tag = sender.tag;
-  if (tag == 0){
-    [self.tfA resignFirstResponder];
-  }else{
-    [self.tfB resignFirstResponder];
-  }
+  [self.activeTF resignFirstResponder];
 }
 
-#define _ABS( x ) ((x) < (0) ? (-x) : (x))
-#define NUM_TEXTFIELDS 2
 
 - (BOOL)textFieldShouldBeginEditing: (UITextField *) textField
 {
+  self.activeTF = textField;
   NSLog(@"Right before");
-  NSUInteger tag = textField.tag;
-  NSUInteger nextTag = (tag + 1) % NUM_TEXTFIELDS;
-  NSUInteger prevTag = (_ABS((tag - 1))) % NUM_TEXTFIELDS;
 
   UIToolbar *toolbar = [[UIToolbar alloc] init];
   [toolbar sizeToFit];
@@ -78,15 +58,13 @@
                                  initWithTitle: @"Previous"
                                  style: UIBarButtonItemStyleDone
                                  target: self
-                                 action:@selector(previousClicked:)];
-  prevButton.tag = prevTag;
+                                 action:@selector(nextOrPreviousClicked:)];
   
   UIBarButtonItem *nextButton = [[UIBarButtonItem alloc]
                                  initWithTitle: @"Next"
                                  style: UIBarButtonItemStyleDone
                                  target: self
-                                 action:@selector(nextClicked:)];
-  nextButton.tag = nextTag;
+                                 action:@selector(nextOrPreviousClicked:)];
   
   UIBarButtonItem *flexButton = [[UIBarButtonItem alloc]
                                  initWithBarButtonSystemItem: UIBarButtonSystemItemFlexibleSpace
@@ -97,7 +75,6 @@
                                 initWithBarButtonSystemItem: UIBarButtonSystemItemDone
                                 target: self
                                 action: @selector(doneClicked:)];
-  doneButton.tag = tag;
   
   NSArray* itemsArray = @[prevButton, nextButton, flexButton, doneButton];
   
@@ -117,6 +94,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+  self.tfA.nextTextField = self.tfB;
+  self.tfB.nextTextField = self.tfA;
 	// Do any additional setup after loading the view, typically from a nib.
   UISwipeGestureRecognizer* swipeRightGestureRecognizer =
   [[UISwipeGestureRecognizer alloc] initWithTarget: self

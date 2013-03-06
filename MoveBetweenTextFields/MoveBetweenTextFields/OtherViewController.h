@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *tfA;
 @property (weak, nonatomic) IBOutlet UITextField *tfB;
+@property (weak, nonatomic) UITextField *activeTF;
 
 @end
