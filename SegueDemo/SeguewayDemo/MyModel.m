@@ -9,5 +9,5 @@
 #import "MyModel.h"
 
 @implementation MyModel
-
+@synthesize text;
 @end

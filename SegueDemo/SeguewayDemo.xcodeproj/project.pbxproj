@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		038FCD9916F3F4E50007B907 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 038FCD9816F3F4E50007B907 /* MyModel.m */; };
 		03EBC07316DD70410026A060 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EBC07216DD70410026A060 /* UIKit.framework */; };
 		03EBC07516DD70410026A060 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EBC07416DD70410026A060 /* Foundation.framework */; };
 		03EBC07716DD70410026A060 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03EBC07616DD70410026A060 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		038FCD9716F3F4E50007B907 /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
+		038FCD9816F3F4E50007B907 /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
 		03EBC06E16DD70410026A060 /* SeguewayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeguewayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03EBC07216DD70410026A060 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03EBC07416DD70410026A060 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +97,8 @@
 				03EBC08D16DD70410026A060 /* MainStoryboard_iPad.storyboard */,
 				03EBC09016DD70410026A060 /* ViewController.h */,
 				03EBC09116DD70410026A060 /* ViewController.m */,
+				038FCD9716F3F4E50007B907 /* MyModel.h */,
+				038FCD9816F3F4E50007B907 /* MyModel.m */,
 				03EBC09B16DD80240026A060 /* OtherViewController.h */,
 				03EBC09C16DD80240026A060 /* OtherViewController.m */,
 				03EBC07916DD70410026A060 /* Supporting Files */,
@@ -186,6 +191,7 @@
 				03EBC08316DD70410026A060 /* AppDelegate.m in Sources */,
 				03EBC09216DD70410026A060 /* ViewController.m in Sources */,
 				03EBC09D16DD80240026A060 /* OtherViewController.m in Sources */,
+				038FCD9916F3F4E50007B907 /* MyModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +318,7 @@
 				03EBC09716DD70410026A060 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,12 +7,16 @@
 //
 
 #import "OtherViewController.h"
+#import "ViewController.h"
 
 @interface OtherViewController ()
 
 @end
 
 @implementation OtherViewController
+
+@synthesize visitingModel;
+@synthesize label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,6 +31,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+  NSLog(@"OVC: view did load");
+  self.label.text = self.visitingModel.text;
 }
 
 - (void)didReceiveMemoryWarning
@@ -38,6 +44,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
   NSLog(@"prepareForSegue: %@", segue.identifier);
+  ((ViewController*)(segue.destinationViewController)).model = self.visitingModel;
 }
 
 @end

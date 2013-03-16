@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyModel.h"
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
-- (IBAction)buttonPressed:(UIButton *)sender;
-@property (weak, nonatomic) IBOutlet UILabel *myLabel;
 @property (weak, nonatomic) IBOutlet UITextField *myTextField;
-
+@property (strong, nonatomic) MyModel* model;
 @end

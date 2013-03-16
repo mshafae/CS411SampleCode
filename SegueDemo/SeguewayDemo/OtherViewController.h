@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyModel.h"
 
 @interface OtherViewController : UIViewController
+
+@property (retain, nonatomic) MyModel* visitingModel;
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
