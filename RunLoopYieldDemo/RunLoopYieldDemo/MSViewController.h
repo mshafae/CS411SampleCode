@@ -10,7 +10,9 @@
 
 @interface MSViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (nonatomic) bool yield;
 - (IBAction)goPressed:(UIButton *)sender;
 - (IBAction)resetPressed:(UIButton *)sender;
+- (IBAction)yieldPressed:(UIButton *)sender;
 
 @end

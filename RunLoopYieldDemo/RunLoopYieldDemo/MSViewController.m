@@ -14,10 +14,13 @@
 
 @implementation MSViewController
 
+@synthesize yield;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+  self.yield = YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,13 +30,19 @@
 }
 
 - (IBAction)goPressed:(UIButton *)sender {
-  while ([self.label.text integerValue] < 10000) {
+  while ([self.label.text integerValue] < 100) {
     self.label.text = [NSString stringWithFormat: @"%d", [self.label.text integerValue]+1];
-    [[NSRunLoop currentRunLoop] runUntilDate: [NSDate date]];
+    if (self.yield) {
+      [[NSRunLoop currentRunLoop] runUntilDate: [NSDate date]];
+    }
   }
 }
 
 - (IBAction)resetPressed:(UIButton *)sender {
   self.label.text = @"0";
 }
+
+- (IBAction)yieldPressed:(UIButton *)sender {
+  self.yield = !self.yield;
+ }
 @end

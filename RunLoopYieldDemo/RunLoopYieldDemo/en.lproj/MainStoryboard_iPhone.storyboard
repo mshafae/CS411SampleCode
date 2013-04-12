@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -46,13 +46,28 @@
                                     <action selector="resetPressed:" destination="2" eventType="touchUpInside" id="aDU-jJ-b9p"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOU-9s-iZd">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Yield">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yieldPressed:" destination="2" eventType="touchUpInside" id="dJB-kJ-gnm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TXD-G4-pmb" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="98Q-gK-eSx"/>
                             <constraint firstItem="mb4-yq-VfK" firstAttribute="top" secondItem="0vt-Gp-1h4" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Aie-OZ-wWC"/>
+                            <constraint firstItem="NOU-9s-iZd" firstAttribute="centerX" secondItem="mb4-yq-VfK" secondAttribute="centerX" type="default" id="QKO-4l-STT"/>
                             <constraint firstItem="TXD-G4-pmb" firstAttribute="top" secondItem="3" secondAttribute="top" constant="116" id="SSL-EZ-05l"/>
                             <constraint firstItem="TXD-G4-pmb" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="cF7-98-IQ1"/>
+                            <constraint firstAttribute="bottom" secondItem="NOU-9s-iZd" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="gbC-OA-PBh"/>
                             <constraint firstItem="0vt-Gp-1h4" firstAttribute="centerX" secondItem="TXD-G4-pmb" secondAttribute="centerX" type="default" id="sjQ-i8-TQs"/>
                             <constraint firstAttribute="bottom" secondItem="mb4-yq-VfK" secondAttribute="bottom" constant="78" id="wI9-YX-q50"/>
                             <constraint firstItem="mb4-yq-VfK" firstAttribute="centerX" secondItem="0vt-Gp-1h4" secondAttribute="centerX" type="default" id="ye4-84-yFz"/>
@@ -71,6 +86,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MSViewController.h"/>
             <relationships>
                 <relationship kind="action" name="goPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="resetPressed:" candidateClass="UIButton"/>
+                <relationship kind="action" name="yieldPressed:" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="label" candidateClass="UILabel"/>
             </relationships>
         </class>
