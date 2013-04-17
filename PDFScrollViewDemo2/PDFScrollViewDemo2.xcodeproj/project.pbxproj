@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0376F11B163600CC00D531FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0376F11A163600CC00D531FF /* UIKit.framework */; };
+		0376F11D163600CC00D531FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0376F11C163600CC00D531FF /* Foundation.framework */; };
+		0376F11F163600CC00D531FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0376F11E163600CC00D531FF /* CoreGraphics.framework */; };
+		0376F125163600CC00D531FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0376F123163600CC00D531FF /* InfoPlist.strings */; };
+		0376F127163600CC00D531FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376F126163600CC00D531FF /* main.m */; };
+		0376F12B163600CC00D531FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376F12A163600CC00D531FF /* AppDelegate.m */; };
+		0376F12E163600CC00D531FF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0376F12C163600CC00D531FF /* MainStoryboard_iPhone.storyboard */; };
+		0376F131163600CC00D531FF /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0376F12F163600CC00D531FF /* MainStoryboard_iPad.storyboard */; };
+		0376F134163600CC00D531FF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376F133163600CC00D531FF /* ViewController.m */; };
+		0376F13C163600CC00D531FF /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0376F13B163600CC00D531FF /* SenTestingKit.framework */; };
+		0376F13D163600CC00D531FF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0376F11A163600CC00D531FF /* UIKit.framework */; };
+		0376F13E163600CC00D531FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0376F11C163600CC00D531FF /* Foundation.framework */; };
+		0376F146163600CC00D531FF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0376F144163600CC00D531FF /* InfoPlist.strings */; };
+		0376F149163600CC00D531FF /* PDFScrollViewDemo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376F148163600CC00D531FF /* PDFScrollViewDemo2Tests.m */; };
+		0376F154163601C800D531FF /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376F153163601C800D531FF /* PDFScrollView.m */; };
+		0376F1571636025600D531FF /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0376F1561636025600D531FF /* TiledPDFView.m */; };
+		0376F1591636069600D531FF /* sysmapjune12.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0376F1581636069600D531FF /* sysmapjune12.pdf */; };
+		0376F16416389BD500D531FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0376F16316389BD500D531FF /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0376F13F163600CC00D531FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0376F10D163600CC00D531FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0376F115163600CC00D531FF;
+			remoteInfo = PDFScrollViewDemo2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0376F116163600CC00D531FF /* PDFScrollViewDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFScrollViewDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0376F11A163600CC00D531FF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0376F11C163600CC00D531FF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0376F11E163600CC00D531FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0376F122163600CC00D531FF /* PDFScrollViewDemo2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PDFScrollViewDemo2-Info.plist"; sourceTree = "<group>"; };
+		0376F124163600CC00D531FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0376F126163600CC00D531FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0376F128163600CC00D531FF /* PDFScrollViewDemo2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PDFScrollViewDemo2-Prefix.pch"; sourceTree = "<group>"; };
+		0376F129163600CC00D531FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0376F12A163600CC00D531FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0376F12D163600CC00D531FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0376F130163600CC00D531FF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0376F132163600CC00D531FF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0376F133163600CC00D531FF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0376F13A163600CC00D531FF /* PDFScrollViewDemo2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDFScrollViewDemo2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0376F13B163600CC00D531FF /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0376F143163600CC00D531FF /* PDFScrollViewDemo2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PDFScrollViewDemo2Tests-Info.plist"; sourceTree = "<group>"; };
+		0376F145163600CC00D531FF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0376F147163600CC00D531FF /* PDFScrollViewDemo2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PDFScrollViewDemo2Tests.h; sourceTree = "<group>"; };
+		0376F148163600CC00D531FF /* PDFScrollViewDemo2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PDFScrollViewDemo2Tests.m; sourceTree = "<group>"; };
+		0376F152163601C800D531FF /* PDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFScrollView.h; sourceTree = "<group>"; };
+		0376F153163601C800D531FF /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
+		0376F1551636025600D531FF /* TiledPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledPDFView.h; sourceTree = "<group>"; };
+		0376F1561636025600D531FF /* TiledPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledPDFView.m; sourceTree = "<group>"; };
+		0376F1581636069600D531FF /* sysmapjune12.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sysmapjune12.pdf; sourceTree = "<group>"; };
+		0376F16316389BD500D531FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = ../../../../System/Library/Frameworks/QuartzCore.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0376F113163600CC00D531FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0376F11B163600CC00D531FF /* UIKit.framework in Frameworks */,
+				0376F11D163600CC00D531FF /* Foundation.framework in Frameworks */,
+				0376F11F163600CC00D531FF /* CoreGraphics.framework in Frameworks */,
+				0376F16416389BD500D531FF /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0376F136163600CC00D531FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0376F13C163600CC00D531FF /* SenTestingKit.framework in Frameworks */,
+				0376F13D163600CC00D531FF /* UIKit.framework in Frameworks */,
+				0376F13E163600CC00D531FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0376F10B163600CC00D531FF = {
+			isa = PBXGroup;
+			children = (
+				0376F120163600CC00D531FF /* PDFScrollViewDemo2 */,
+				0376F141163600CC00D531FF /* PDFScrollViewDemo2Tests */,
+				0376F119163600CC00D531FF /* Frameworks */,
+				0376F117163600CC00D531FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0376F117163600CC00D531FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0376F116163600CC00D531FF /* PDFScrollViewDemo2.app */,
+				0376F13A163600CC00D531FF /* PDFScrollViewDemo2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0376F119163600CC00D531FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0376F16316389BD500D531FF /* QuartzCore.framework */,
+				0376F11A163600CC00D531FF /* UIKit.framework */,
+				0376F11C163600CC00D531FF /* Foundation.framework */,
+				0376F11E163600CC00D531FF /* CoreGraphics.framework */,
+				0376F13B163600CC00D531FF /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0376F120163600CC00D531FF /* PDFScrollViewDemo2 */ = {
+			isa = PBXGroup;
+			children = (
+				0376F129163600CC00D531FF /* AppDelegate.h */,
+				0376F12A163600CC00D531FF /* AppDelegate.m */,
+				0376F12C163600CC00D531FF /* MainStoryboard_iPhone.storyboard */,
+				0376F12F163600CC00D531FF /* MainStoryboard_iPad.storyboard */,
+				0376F132163600CC00D531FF /* ViewController.h */,
+				0376F133163600CC00D531FF /* ViewController.m */,
+				0376F152163601C800D531FF /* PDFScrollView.h */,
+				0376F153163601C800D531FF /* PDFScrollView.m */,
+				0376F1551636025600D531FF /* TiledPDFView.h */,
+				0376F1561636025600D531FF /* TiledPDFView.m */,
+				0376F1581636069600D531FF /* sysmapjune12.pdf */,
+				0376F121163600CC00D531FF /* Supporting Files */,
+			);
+			path = PDFScrollViewDemo2;
+			sourceTree = "<group>";
+		};
+		0376F121163600CC00D531FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0376F122163600CC00D531FF /* PDFScrollViewDemo2-Info.plist */,
+				0376F123163600CC00D531FF /* InfoPlist.strings */,
+				0376F126163600CC00D531FF /* main.m */,
+				0376F128163600CC00D531FF /* PDFScrollViewDemo2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0376F141163600CC00D531FF /* PDFScrollViewDemo2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0376F147163600CC00D531FF /* PDFScrollViewDemo2Tests.h */,
+				0376F148163600CC00D531FF /* PDFScrollViewDemo2Tests.m */,
+				0376F142163600CC00D531FF /* Supporting Files */,
+			);
+			path = PDFScrollViewDemo2Tests;
+			sourceTree = "<group>";
+		};
+		0376F142163600CC00D531FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0376F143163600CC00D531FF /* PDFScrollViewDemo2Tests-Info.plist */,
+				0376F144163600CC00D531FF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0376F115163600CC00D531FF /* PDFScrollViewDemo2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0376F14C163600CC00D531FF /* Build configuration list for PBXNativeTarget "PDFScrollViewDemo2" */;
+			buildPhases = (
+				0376F112163600CC00D531FF /* Sources */,
+				0376F113163600CC00D531FF /* Frameworks */,
+				0376F114163600CC00D531FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDFScrollViewDemo2;
+			productName = PDFScrollViewDemo2;
+			productReference = 0376F116163600CC00D531FF /* PDFScrollViewDemo2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0376F139163600CC00D531FF /* PDFScrollViewDemo2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0376F14F163600CC00D531FF /* Build configuration list for PBXNativeTarget "PDFScrollViewDemo2Tests" */;
+			buildPhases = (
+				0376F135163600CC00D531FF /* Sources */,
+				0376F136163600CC00D531FF /* Frameworks */,
+				0376F137163600CC00D531FF /* Resources */,
+				0376F138163600CC00D531FF /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0376F140163600CC00D531FF /* PBXTargetDependency */,
+			);
+			name = PDFScrollViewDemo2Tests;
+			productName = PDFScrollViewDemo2Tests;
+			productReference = 0376F13A163600CC00D531FF /* PDFScrollViewDemo2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0376F10D163600CC00D531FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Michael Shafae";
+			};
+			buildConfigurationList = 0376F110163600CC00D531FF /* Build configuration list for PBXProject "PDFScrollViewDemo2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0376F10B163600CC00D531FF;
+			productRefGroup = 0376F117163600CC00D531FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0376F115163600CC00D531FF /* PDFScrollViewDemo2 */,
+				0376F139163600CC00D531FF /* PDFScrollViewDemo2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0376F114163600CC00D531FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0376F125163600CC00D531FF /* InfoPlist.strings in Resources */,
+				0376F12E163600CC00D531FF /* MainStoryboard_iPhone.storyboard in Resources */,
+				0376F131163600CC00D531FF /* MainStoryboard_iPad.storyboard in Resources */,
+				0376F1591636069600D531FF /* sysmapjune12.pdf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0376F137163600CC00D531FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0376F146163600CC00D531FF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0376F138163600CC00D531FF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0376F112163600CC00D531FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0376F127163600CC00D531FF /* main.m in Sources */,
+				0376F12B163600CC00D531FF /* AppDelegate.m in Sources */,
+				0376F134163600CC00D531FF /* ViewController.m in Sources */,
+				0376F154163601C800D531FF /* PDFScrollView.m in Sources */,
+				0376F1571636025600D531FF /* TiledPDFView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0376F135163600CC00D531FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0376F149163600CC00D531FF /* PDFScrollViewDemo2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0376F140163600CC00D531FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0376F115163600CC00D531FF /* PDFScrollViewDemo2 */;
+			targetProxy = 0376F13F163600CC00D531FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0376F123163600CC00D531FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0376F124163600CC00D531FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0376F12C163600CC00D531FF /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0376F12D163600CC00D531FF /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0376F12F163600CC00D531FF /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0376F130163600CC00D531FF /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0376F144163600CC00D531FF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0376F145163600CC00D531FF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0376F14A163600CC00D531FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0376F14B163600CC00D531FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0376F14D163600CC00D531FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDFScrollViewDemo2/PDFScrollViewDemo2-Prefix.pch";
+				INFOPLIST_FILE = "PDFScrollViewDemo2/PDFScrollViewDemo2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0376F14E163600CC00D531FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDFScrollViewDemo2/PDFScrollViewDemo2-Prefix.pch";
+				INFOPLIST_FILE = "PDFScrollViewDemo2/PDFScrollViewDemo2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0376F150163600CC00D531FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PDFScrollViewDemo2.app/PDFScrollViewDemo2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDFScrollViewDemo2/PDFScrollViewDemo2-Prefix.pch";
+				INFOPLIST_FILE = "PDFScrollViewDemo2Tests/PDFScrollViewDemo2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0376F151163600CC00D531FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PDFScrollViewDemo2.app/PDFScrollViewDemo2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDFScrollViewDemo2/PDFScrollViewDemo2-Prefix.pch";
+				INFOPLIST_FILE = "PDFScrollViewDemo2Tests/PDFScrollViewDemo2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0376F110163600CC00D531FF /* Build configuration list for PBXProject "PDFScrollViewDemo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0376F14A163600CC00D531FF /* Debug */,
+				0376F14B163600CC00D531FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0376F14C163600CC00D531FF /* Build configuration list for PBXNativeTarget "PDFScrollViewDemo2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0376F14D163600CC00D531FF /* Debug */,
+				0376F14E163600CC00D531FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0376F14F163600CC00D531FF /* Build configuration list for PBXNativeTarget "PDFScrollViewDemo2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0376F150163600CC00D531FF /* Debug */,
+				0376F151163600CC00D531FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0376F10D163600CC00D531FF /* Project object */;
+}
