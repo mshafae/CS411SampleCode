@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iOSnova' target in the 'iOSnova' project
+//
+
+#ifdef __OBJC__
+//#import <libnova/libnova.h>
+#endif

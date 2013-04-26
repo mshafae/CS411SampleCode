@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03C31E72172A39C200AF556F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03C31E71172A39C200AF556F /* Foundation.framework */; };
+		03C31EC8172A3A6E00AF556F /* aberration.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EA5172A3A6E00AF556F /* aberration.c */; };
+		03C31EC9172A3A6E00AF556F /* airmass.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EA6172A3A6E00AF556F /* airmass.c */; };
+		03C31ECA172A3A6E00AF556F /* angular_separation.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EA7172A3A6E00AF556F /* angular_separation.c */; };
+		03C31ECB172A3A6E00AF556F /* apparent_position.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EA8172A3A6E00AF556F /* apparent_position.c */; };
+		03C31ECC172A3A6E00AF556F /* asteroid.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EA9172A3A6E00AF556F /* asteroid.c */; };
+		03C31ECD172A3A6E00AF556F /* comet.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EAA172A3A6E00AF556F /* comet.c */; };
+		03C31ECE172A3A6E00AF556F /* dynamical_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EAB172A3A6E00AF556F /* dynamical_time.c */; };
+		03C31ECF172A3A6E00AF556F /* earth.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EAC172A3A6E00AF556F /* earth.c */; };
+		03C31ED0172A3A6E00AF556F /* elliptic_motion.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EAD172A3A6E00AF556F /* elliptic_motion.c */; };
+		03C31ED1172A3A6E00AF556F /* heliocentric_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EAE172A3A6E00AF556F /* heliocentric_time.c */; };
+		03C31ED2172A3A6E00AF556F /* hyperbolic_motion.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EAF172A3A6E00AF556F /* hyperbolic_motion.c */; };
+		03C31ED3172A3A6E00AF556F /* julian_day.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EB0172A3A6E00AF556F /* julian_day.c */; };
+		03C31ED4172A3A6E00AF556F /* jupiter.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EB1172A3A6E00AF556F /* jupiter.c */; };
+		03C31ED5172A3A6E00AF556F /* lunar.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EB2172A3A6E00AF556F /* lunar.c */; };
+		03C31ED6172A3A6E00AF556F /* mars.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EB4172A3A6E00AF556F /* mars.c */; };
+		03C31ED7172A3A6E00AF556F /* mercury.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EB5172A3A6E00AF556F /* mercury.c */; };
+		03C31ED8172A3A6E00AF556F /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EB6172A3A6E00AF556F /* misc.c */; };
+		03C31ED9172A3A6E00AF556F /* neptune.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EB7172A3A6E00AF556F /* neptune.c */; };
+		03C31EDA172A3A6E00AF556F /* nutation.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EB8172A3A6E00AF556F /* nutation.c */; };
+		03C31EDB172A3A6E00AF556F /* parabolic_motion.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EB9172A3A6E00AF556F /* parabolic_motion.c */; };
+		03C31EDC172A3A6E00AF556F /* parallax.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EBA172A3A6E00AF556F /* parallax.c */; };
+		03C31EDD172A3A6E00AF556F /* pluto.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EBB172A3A6E00AF556F /* pluto.c */; };
+		03C31EDE172A3A6E00AF556F /* precession.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EBC172A3A6E00AF556F /* precession.c */; };
+		03C31EDF172A3A6E00AF556F /* proper_motion.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EBD172A3A6E00AF556F /* proper_motion.c */; };
+		03C31EE0172A3A6E00AF556F /* refraction.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EBE172A3A6E00AF556F /* refraction.c */; };
+		03C31EE1172A3A6E00AF556F /* rise_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EBF172A3A6E00AF556F /* rise_set.c */; };
+		03C31EE2172A3A6E00AF556F /* saturn.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EC0172A3A6E00AF556F /* saturn.c */; };
+		03C31EE3172A3A6E00AF556F /* sidereal_time.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EC1172A3A6E00AF556F /* sidereal_time.c */; };
+		03C31EE4172A3A6E00AF556F /* solar.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EC2172A3A6E00AF556F /* solar.c */; };
+		03C31EE5172A3A6E00AF556F /* transform.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EC3172A3A6E00AF556F /* transform.c */; };
+		03C31EE6172A3A6E00AF556F /* uranus.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EC4172A3A6E00AF556F /* uranus.c */; };
+		03C31EE7172A3A6E00AF556F /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EC5172A3A6E00AF556F /* utility.c */; };
+		03C31EE8172A3A6E00AF556F /* venus.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EC6172A3A6E00AF556F /* venus.c */; };
+		03C31EE9172A3A6E00AF556F /* vsop87.c in Sources */ = {isa = PBXBuildFile; fileRef = 03C31EC7172A3A6E00AF556F /* vsop87.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		03C31E6C172A39C200AF556F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		03C31E6E172A39C200AF556F /* libiOSnova.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOSnova.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		03C31E71172A39C200AF556F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03C31E75172A39C200AF556F /* iOSnova-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSnova-Prefix.pch"; sourceTree = "<group>"; };
+		03C31E80172A3A1D00AF556F /* aberration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = aberration.h; path = ../../../src/libnova/aberration.h; sourceTree = "<group>"; };
+		03C31E81172A3A1D00AF556F /* airmass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = airmass.h; path = ../../../src/libnova/airmass.h; sourceTree = "<group>"; };
+		03C31E82172A3A1D00AF556F /* angular_separation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = angular_separation.h; path = ../../../src/libnova/angular_separation.h; sourceTree = "<group>"; };
+		03C31E83172A3A1D00AF556F /* apparent_position.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = apparent_position.h; path = ../../../src/libnova/apparent_position.h; sourceTree = "<group>"; };
+		03C31E84172A3A1D00AF556F /* asteroid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = asteroid.h; path = ../../../src/libnova/asteroid.h; sourceTree = "<group>"; };
+		03C31E85172A3A1D00AF556F /* comet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = comet.h; path = ../../../src/libnova/comet.h; sourceTree = "<group>"; };
+		03C31E87172A3A1D00AF556F /* dynamical_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamical_time.h; path = ../../../src/libnova/dynamical_time.h; sourceTree = "<group>"; };
+		03C31E88172A3A1D00AF556F /* earth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = earth.h; path = ../../../src/libnova/earth.h; sourceTree = "<group>"; };
+		03C31E89172A3A1D00AF556F /* elliptic_motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = elliptic_motion.h; path = ../../../src/libnova/elliptic_motion.h; sourceTree = "<group>"; };
+		03C31E8A172A3A1D00AF556F /* heliocentric_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = heliocentric_time.h; path = ../../../src/libnova/heliocentric_time.h; sourceTree = "<group>"; };
+		03C31E8B172A3A1D00AF556F /* hyperbolic_motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hyperbolic_motion.h; path = ../../../src/libnova/hyperbolic_motion.h; sourceTree = "<group>"; };
+		03C31E8C172A3A1D00AF556F /* julian_day.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = julian_day.h; path = ../../../src/libnova/julian_day.h; sourceTree = "<group>"; };
+		03C31E8D172A3A1D00AF556F /* jupiter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jupiter.h; path = ../../../src/libnova/jupiter.h; sourceTree = "<group>"; };
+		03C31E8E172A3A1D00AF556F /* libnova.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libnova.h; path = ../../../src/libnova/libnova.h; sourceTree = "<group>"; };
+		03C31E8F172A3A1D00AF556F /* ln_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ln_types.h; path = ../../../src/libnova/ln_types.h; sourceTree = "<group>"; };
+		03C31E90172A3A1D00AF556F /* lunar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lunar.h; path = ../../../src/libnova/lunar.h; sourceTree = "<group>"; };
+		03C31E91172A3A1D00AF556F /* mars.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mars.h; path = ../../../src/libnova/mars.h; sourceTree = "<group>"; };
+		03C31E92172A3A1D00AF556F /* mercury.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mercury.h; path = ../../../src/libnova/mercury.h; sourceTree = "<group>"; };
+		03C31E93172A3A1D00AF556F /* neptune.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = neptune.h; path = ../../../src/libnova/neptune.h; sourceTree = "<group>"; };
+		03C31E94172A3A1D00AF556F /* nutation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = nutation.h; path = ../../../src/libnova/nutation.h; sourceTree = "<group>"; };
+		03C31E95172A3A1D00AF556F /* parabolic_motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parabolic_motion.h; path = ../../../src/libnova/parabolic_motion.h; sourceTree = "<group>"; };
+		03C31E96172A3A1D00AF556F /* parallax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parallax.h; path = ../../../src/libnova/parallax.h; sourceTree = "<group>"; };
+		03C31E97172A3A1D00AF556F /* pluto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pluto.h; path = ../../../src/libnova/pluto.h; sourceTree = "<group>"; };
+		03C31E98172A3A1D00AF556F /* precession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = precession.h; path = ../../../src/libnova/precession.h; sourceTree = "<group>"; };
+		03C31E99172A3A1D00AF556F /* proper_motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = proper_motion.h; path = ../../../src/libnova/proper_motion.h; sourceTree = "<group>"; };
+		03C31E9A172A3A1D00AF556F /* refraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = refraction.h; path = ../../../src/libnova/refraction.h; sourceTree = "<group>"; };
+		03C31E9B172A3A1D00AF556F /* rise_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rise_set.h; path = ../../../src/libnova/rise_set.h; sourceTree = "<group>"; };
+		03C31E9C172A3A1D00AF556F /* saturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = saturn.h; path = ../../../src/libnova/saturn.h; sourceTree = "<group>"; };
+		03C31E9D172A3A1D00AF556F /* sidereal_time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sidereal_time.h; path = ../../../src/libnova/sidereal_time.h; sourceTree = "<group>"; };
+		03C31E9E172A3A1D00AF556F /* solar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = solar.h; path = ../../../src/libnova/solar.h; sourceTree = "<group>"; };
+		03C31E9F172A3A1D00AF556F /* transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = transform.h; path = ../../../src/libnova/transform.h; sourceTree = "<group>"; };
+		03C31EA0172A3A1D00AF556F /* uranus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = uranus.h; path = ../../../src/libnova/uranus.h; sourceTree = "<group>"; };
+		03C31EA1172A3A1D00AF556F /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = ../../../src/libnova/utility.h; sourceTree = "<group>"; };
+		03C31EA2172A3A1D00AF556F /* venus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = venus.h; path = ../../../src/libnova/venus.h; sourceTree = "<group>"; };
+		03C31EA3172A3A1D00AF556F /* vsop87.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vsop87.h; path = ../../../src/libnova/vsop87.h; sourceTree = "<group>"; };
+		03C31EA5172A3A6E00AF556F /* aberration.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = aberration.c; path = ../../../src/aberration.c; sourceTree = "<group>"; };
+		03C31EA6172A3A6E00AF556F /* airmass.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = airmass.c; path = ../../../src/airmass.c; sourceTree = "<group>"; };
+		03C31EA7172A3A6E00AF556F /* angular_separation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = angular_separation.c; path = ../../../src/angular_separation.c; sourceTree = "<group>"; };
+		03C31EA8172A3A6E00AF556F /* apparent_position.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = apparent_position.c; path = ../../../src/apparent_position.c; sourceTree = "<group>"; };
+		03C31EA9172A3A6E00AF556F /* asteroid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = asteroid.c; path = ../../../src/asteroid.c; sourceTree = "<group>"; };
+		03C31EAA172A3A6E00AF556F /* comet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = comet.c; path = ../../../src/comet.c; sourceTree = "<group>"; };
+		03C31EAB172A3A6E00AF556F /* dynamical_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dynamical_time.c; path = ../../../src/dynamical_time.c; sourceTree = "<group>"; };
+		03C31EAC172A3A6E00AF556F /* earth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = earth.c; path = ../../../src/earth.c; sourceTree = "<group>"; };
+		03C31EAD172A3A6E00AF556F /* elliptic_motion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = elliptic_motion.c; path = ../../../src/elliptic_motion.c; sourceTree = "<group>"; };
+		03C31EAE172A3A6E00AF556F /* heliocentric_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = heliocentric_time.c; path = ../../../src/heliocentric_time.c; sourceTree = "<group>"; };
+		03C31EAF172A3A6E00AF556F /* hyperbolic_motion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hyperbolic_motion.c; path = ../../../src/hyperbolic_motion.c; sourceTree = "<group>"; };
+		03C31EB0172A3A6E00AF556F /* julian_day.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = julian_day.c; path = ../../../src/julian_day.c; sourceTree = "<group>"; };
+		03C31EB1172A3A6E00AF556F /* jupiter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = jupiter.c; path = ../../../src/jupiter.c; sourceTree = "<group>"; };
+		03C31EB2172A3A6E00AF556F /* lunar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lunar.c; path = ../../../src/lunar.c; sourceTree = "<group>"; };
+		03C31EB4172A3A6E00AF556F /* mars.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mars.c; path = ../../../src/mars.c; sourceTree = "<group>"; };
+		03C31EB5172A3A6E00AF556F /* mercury.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mercury.c; path = ../../../src/mercury.c; sourceTree = "<group>"; };
+		03C31EB6172A3A6E00AF556F /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = misc.c; path = ../../../src/misc.c; sourceTree = "<group>"; };
+		03C31EB7172A3A6E00AF556F /* neptune.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = neptune.c; path = ../../../src/neptune.c; sourceTree = "<group>"; };
+		03C31EB8172A3A6E00AF556F /* nutation.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = nutation.c; path = ../../../src/nutation.c; sourceTree = "<group>"; };
+		03C31EB9172A3A6E00AF556F /* parabolic_motion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parabolic_motion.c; path = ../../../src/parabolic_motion.c; sourceTree = "<group>"; };
+		03C31EBA172A3A6E00AF556F /* parallax.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = parallax.c; path = ../../../src/parallax.c; sourceTree = "<group>"; };
+		03C31EBB172A3A6E00AF556F /* pluto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pluto.c; path = ../../../src/pluto.c; sourceTree = "<group>"; };
+		03C31EBC172A3A6E00AF556F /* precession.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = precession.c; path = ../../../src/precession.c; sourceTree = "<group>"; };
+		03C31EBD172A3A6E00AF556F /* proper_motion.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = proper_motion.c; path = ../../../src/proper_motion.c; sourceTree = "<group>"; };
+		03C31EBE172A3A6E00AF556F /* refraction.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = refraction.c; path = ../../../src/refraction.c; sourceTree = "<group>"; };
+		03C31EBF172A3A6E00AF556F /* rise_set.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rise_set.c; path = ../../../src/rise_set.c; sourceTree = "<group>"; };
+		03C31EC0172A3A6E00AF556F /* saturn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = saturn.c; path = ../../../src/saturn.c; sourceTree = "<group>"; };
+		03C31EC1172A3A6E00AF556F /* sidereal_time.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sidereal_time.c; path = ../../../src/sidereal_time.c; sourceTree = "<group>"; };
+		03C31EC2172A3A6E00AF556F /* solar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = solar.c; path = ../../../src/solar.c; sourceTree = "<group>"; };
+		03C31EC3172A3A6E00AF556F /* transform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = transform.c; path = ../../../src/transform.c; sourceTree = "<group>"; };
+		03C31EC4172A3A6E00AF556F /* uranus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = uranus.c; path = ../../../src/uranus.c; sourceTree = "<group>"; };
+		03C31EC5172A3A6E00AF556F /* utility.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utility.c; path = ../../../src/utility.c; sourceTree = "<group>"; };
+		03C31EC6172A3A6E00AF556F /* venus.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = venus.c; path = ../../../src/venus.c; sourceTree = "<group>"; };
+		03C31EC7172A3A6E00AF556F /* vsop87.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vsop87.c; path = ../../../src/vsop87.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03C31E6B172A39C200AF556F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C31E72172A39C200AF556F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C31E65172A39C200AF556F = {
+			isa = PBXGroup;
+			children = (
+				03C31E73172A39C200AF556F /* iOSnova */,
+				03C31E70172A39C200AF556F /* Frameworks */,
+				03C31E6F172A39C200AF556F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03C31E6F172A39C200AF556F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03C31E6E172A39C200AF556F /* libiOSnova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03C31E70172A39C200AF556F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03C31E71172A39C200AF556F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03C31E73172A39C200AF556F /* iOSnova */ = {
+			isa = PBXGroup;
+			children = (
+				03C31EA4172A3A3300AF556F /* Source */,
+				03C31E7F172A39DC00AF556F /* Headers */,
+				03C31E74172A39C200AF556F /* Supporting Files */,
+			);
+			path = iOSnova;
+			sourceTree = "<group>";
+		};
+		03C31E74172A39C200AF556F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03C31E75172A39C200AF556F /* iOSnova-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03C31E7F172A39DC00AF556F /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				03C31E80172A3A1D00AF556F /* aberration.h */,
+				03C31E81172A3A1D00AF556F /* airmass.h */,
+				03C31E82172A3A1D00AF556F /* angular_separation.h */,
+				03C31E83172A3A1D00AF556F /* apparent_position.h */,
+				03C31E84172A3A1D00AF556F /* asteroid.h */,
+				03C31E85172A3A1D00AF556F /* comet.h */,
+				03C31E87172A3A1D00AF556F /* dynamical_time.h */,
+				03C31E88172A3A1D00AF556F /* earth.h */,
+				03C31E89172A3A1D00AF556F /* elliptic_motion.h */,
+				03C31E8A172A3A1D00AF556F /* heliocentric_time.h */,
+				03C31E8B172A3A1D00AF556F /* hyperbolic_motion.h */,
+				03C31E8C172A3A1D00AF556F /* julian_day.h */,
+				03C31E8D172A3A1D00AF556F /* jupiter.h */,
+				03C31E8E172A3A1D00AF556F /* libnova.h */,
+				03C31E8F172A3A1D00AF556F /* ln_types.h */,
+				03C31E90172A3A1D00AF556F /* lunar.h */,
+				03C31E91172A3A1D00AF556F /* mars.h */,
+				03C31E92172A3A1D00AF556F /* mercury.h */,
+				03C31E93172A3A1D00AF556F /* neptune.h */,
+				03C31E94172A3A1D00AF556F /* nutation.h */,
+				03C31E95172A3A1D00AF556F /* parabolic_motion.h */,
+				03C31E96172A3A1D00AF556F /* parallax.h */,
+				03C31E97172A3A1D00AF556F /* pluto.h */,
+				03C31E98172A3A1D00AF556F /* precession.h */,
+				03C31E99172A3A1D00AF556F /* proper_motion.h */,
+				03C31E9A172A3A1D00AF556F /* refraction.h */,
+				03C31E9B172A3A1D00AF556F /* rise_set.h */,
+				03C31E9C172A3A1D00AF556F /* saturn.h */,
+				03C31E9D172A3A1D00AF556F /* sidereal_time.h */,
+				03C31E9E172A3A1D00AF556F /* solar.h */,
+				03C31E9F172A3A1D00AF556F /* transform.h */,
+				03C31EA0172A3A1D00AF556F /* uranus.h */,
+				03C31EA1172A3A1D00AF556F /* utility.h */,
+				03C31EA2172A3A1D00AF556F /* venus.h */,
+				03C31EA3172A3A1D00AF556F /* vsop87.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		03C31EA4172A3A3300AF556F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				03C31EA5172A3A6E00AF556F /* aberration.c */,
+				03C31EA6172A3A6E00AF556F /* airmass.c */,
+				03C31EA7172A3A6E00AF556F /* angular_separation.c */,
+				03C31EA8172A3A6E00AF556F /* apparent_position.c */,
+				03C31EA9172A3A6E00AF556F /* asteroid.c */,
+				03C31EAA172A3A6E00AF556F /* comet.c */,
+				03C31EAB172A3A6E00AF556F /* dynamical_time.c */,
+				03C31EAC172A3A6E00AF556F /* earth.c */,
+				03C31EAD172A3A6E00AF556F /* elliptic_motion.c */,
+				03C31EAE172A3A6E00AF556F /* heliocentric_time.c */,
+				03C31EAF172A3A6E00AF556F /* hyperbolic_motion.c */,
+				03C31EB0172A3A6E00AF556F /* julian_day.c */,
+				03C31EB1172A3A6E00AF556F /* jupiter.c */,
+				03C31EB2172A3A6E00AF556F /* lunar.c */,
+				03C31EB4172A3A6E00AF556F /* mars.c */,
+				03C31EB5172A3A6E00AF556F /* mercury.c */,
+				03C31EB6172A3A6E00AF556F /* misc.c */,
+				03C31EB7172A3A6E00AF556F /* neptune.c */,
+				03C31EB8172A3A6E00AF556F /* nutation.c */,
+				03C31EB9172A3A6E00AF556F /* parabolic_motion.c */,
+				03C31EBA172A3A6E00AF556F /* parallax.c */,
+				03C31EBB172A3A6E00AF556F /* pluto.c */,
+				03C31EBC172A3A6E00AF556F /* precession.c */,
+				03C31EBD172A3A6E00AF556F /* proper_motion.c */,
+				03C31EBE172A3A6E00AF556F /* refraction.c */,
+				03C31EBF172A3A6E00AF556F /* rise_set.c */,
+				03C31EC0172A3A6E00AF556F /* saturn.c */,
+				03C31EC1172A3A6E00AF556F /* sidereal_time.c */,
+				03C31EC2172A3A6E00AF556F /* solar.c */,
+				03C31EC3172A3A6E00AF556F /* transform.c */,
+				03C31EC4172A3A6E00AF556F /* uranus.c */,
+				03C31EC5172A3A6E00AF556F /* utility.c */,
+				03C31EC6172A3A6E00AF556F /* venus.c */,
+				03C31EC7172A3A6E00AF556F /* vsop87.c */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03C31E6D172A39C200AF556F /* iOSnova */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03C31E7C172A39C200AF556F /* Build configuration list for PBXNativeTarget "iOSnova" */;
+			buildPhases = (
+				03C31E6A172A39C200AF556F /* Sources */,
+				03C31E6B172A39C200AF556F /* Frameworks */,
+				03C31E6C172A39C200AF556F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSnova;
+			productName = iOSnova;
+			productReference = 03C31E6E172A39C200AF556F /* libiOSnova.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03C31E66172A39C200AF556F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Michael Shafae";
+			};
+			buildConfigurationList = 03C31E69172A39C200AF556F /* Build configuration list for PBXProject "iOSnova" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 03C31E65172A39C200AF556F;
+			productRefGroup = 03C31E6F172A39C200AF556F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03C31E6D172A39C200AF556F /* iOSnova */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03C31E6A172A39C200AF556F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03C31EC8172A3A6E00AF556F /* aberration.c in Sources */,
+				03C31EC9172A3A6E00AF556F /* airmass.c in Sources */,
+				03C31ECA172A3A6E00AF556F /* angular_separation.c in Sources */,
+				03C31ECB172A3A6E00AF556F /* apparent_position.c in Sources */,
+				03C31ECC172A3A6E00AF556F /* asteroid.c in Sources */,
+				03C31ECD172A3A6E00AF556F /* comet.c in Sources */,
+				03C31ECE172A3A6E00AF556F /* dynamical_time.c in Sources */,
+				03C31ECF172A3A6E00AF556F /* earth.c in Sources */,
+				03C31ED0172A3A6E00AF556F /* elliptic_motion.c in Sources */,
+				03C31ED1172A3A6E00AF556F /* heliocentric_time.c in Sources */,
+				03C31ED2172A3A6E00AF556F /* hyperbolic_motion.c in Sources */,
+				03C31ED3172A3A6E00AF556F /* julian_day.c in Sources */,
+				03C31ED4172A3A6E00AF556F /* jupiter.c in Sources */,
+				03C31ED5172A3A6E00AF556F /* lunar.c in Sources */,
+				03C31ED6172A3A6E00AF556F /* mars.c in Sources */,
+				03C31ED7172A3A6E00AF556F /* mercury.c in Sources */,
+				03C31ED8172A3A6E00AF556F /* misc.c in Sources */,
+				03C31ED9172A3A6E00AF556F /* neptune.c in Sources */,
+				03C31EDA172A3A6E00AF556F /* nutation.c in Sources */,
+				03C31EDB172A3A6E00AF556F /* parabolic_motion.c in Sources */,
+				03C31EDC172A3A6E00AF556F /* parallax.c in Sources */,
+				03C31EDD172A3A6E00AF556F /* pluto.c in Sources */,
+				03C31EDE172A3A6E00AF556F /* precession.c in Sources */,
+				03C31EDF172A3A6E00AF556F /* proper_motion.c in Sources */,
+				03C31EE0172A3A6E00AF556F /* refraction.c in Sources */,
+				03C31EE1172A3A6E00AF556F /* rise_set.c in Sources */,
+				03C31EE2172A3A6E00AF556F /* saturn.c in Sources */,
+				03C31EE3172A3A6E00AF556F /* sidereal_time.c in Sources */,
+				03C31EE4172A3A6E00AF556F /* solar.c in Sources */,
+				03C31EE5172A3A6E00AF556F /* transform.c in Sources */,
+				03C31EE6172A3A6E00AF556F /* uranus.c in Sources */,
+				03C31EE7172A3A6E00AF556F /* utility.c in Sources */,
+				03C31EE8172A3A6E00AF556F /* venus.c in Sources */,
+				03C31EE9172A3A6E00AF556F /* vsop87.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		03C31E7A172A39C200AF556F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03C31E7B172A39C200AF556F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03C31E7D172A39C200AF556F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/iOSnova.dst;
+				GCC_INPUT_FILETYPE = sourcecode.c.c;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSnova/iOSnova-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "../../src/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		03C31E7E172A39C200AF556F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/iOSnova.dst;
+				GCC_INPUT_FILETYPE = sourcecode.c.c;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSnova/iOSnova-Prefix.pch";
+				"HEADER_SEARCH_PATHS[arch=*]" = "../../src/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03C31E69172A39C200AF556F /* Build configuration list for PBXProject "iOSnova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C31E7A172A39C200AF556F /* Debug */,
+				03C31E7B172A39C200AF556F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03C31E7C172A39C200AF556F /* Build configuration list for PBXNativeTarget "iOSnova" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03C31E7D172A39C200AF556F /* Debug */,
+				03C31E7E172A39C200AF556F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03C31E66172A39C200AF556F /* Project object */;
+}
