@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="pC6-VK-sZM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.3675926679078666" green="0.59252089671395725" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="cqC-xM-ix5" appends="YES" id="uoK-rq-rOH"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="fnM-Em-77S"/>
+                    <connections>
+                        <segue destination="KXZ-US-6Kg" kind="push" identifier="fromFirstToSecond" id="GfI-Ac-57K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="cqC-xM-ix5">
+                    <connections>
+                        <action selector="recognizeSwipe:" destination="2" id="axl-to-BgP"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="272" y="275"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="U6G-kc-NFe">
+            <objects>
+                <viewController id="KXZ-US-6Kg" customClass="SecondViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JcB-a0-Rxh" customClass="CustomView">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="zto-Oy-R2K" appends="YES" id="UoM-W2-qon"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="4yR-aT-5NV"/>
+                    <connections>
+                        <segue destination="2" kind="push" identifier="fromSecondToFirst" id="Rnx-sX-aLb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="elY-vF-wMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="zto-Oy-R2K">
+                    <connections>
+                        <action selector="recognizeSwipe:" destination="KXZ-US-6Kg" id="ur5-cf-cYg"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="822" y="267"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vDd-Pa-l5K">
+            <objects>
+                <navigationController id="pC6-VK-sZM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="m5y-Q6-XKR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="b6c-mN-Buq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0bN-3I-jAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-389" y="-33"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="CustomView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomView.h"/>
+        </class>
+        <class className="FirstViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="recognizeSwipe:" candidateClass="UISwipeGestureRecognizer"/>
+            </relationships>
+        </class>
+        <class className="SecondViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SecondViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="recognizeSwipe:" candidateClass="UISwipeGestureRecognizer"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Rnx-sX-aLb"/>
+    </inferredMetricsTieBreakers>
+</document>
