@@ -76,9 +76,19 @@
     NSURLSessionTask* task = [delegateFreeSession dataTaskWithURL: [i exchangeRateURL]
                                                 completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
                           NSLog(@"Got response %@ with error %@.\n", response, error);
-                          NSLog(@"DATA:\n%@\nEND DATA\n",
+                          id obj = [NSJSONSerialization JSONObjectWithData: data
+                                           options: 0
+                                             error: nil];
+                          if( [obj isKindOfClass: [NSDictionary class]] ){
+                            NSDictionary *dict = (NSDictionary*)obj;
+                            NSLog(@"%@", [dict description]);
+                          }else{
+                            NSLog(@"Not a dictionary.");
+                            exit(1);
+                          }
+                          /*NSLog(@"DATA:\n%@\nEND DATA\n",
                                 [[NSString alloc] initWithData: data
-                                                      encoding: NSUTF8StringEncoding]);
+                                                      encoding: NSUTF8StringEncoding]);*/
                         }];
     [task resume];
   }
