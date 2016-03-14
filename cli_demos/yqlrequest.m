@@ -7,9 +7,15 @@
 
 int main(void){
   @autoreleasepool{
+    char in[64];
+    puts("Please enter your currency code\n");
+    scanf("%s", in);
+    printf("You typed \"%s\"\n", in);
+    NSString* inCode = [NSString stringWithCString: in encoding: NSASCIIStringEncoding];
+    NSLog(@"is it still %@?", inCode);
     NSNumber* rate;
     NSDate *lastFetchedOn;
-    NSString* yqlQuery = [NSString stringWithFormat: @"select * from yahoo.finance.xchange where pair in (\"%@%@\")", @"USD", @"GBP"];
+    NSString* yqlQuery = [NSString stringWithFormat: @"select * from yahoo.finance.xchange where pair in (\"%@%@\")", @"USD", inCode];
     NSString* urlString = [NSString stringWithFormat: @"https://query.yahooapis.com/v1/public/yql?q=%@&format=json&env=store%%3A%%2F%%2Fdatatables.org%%2Falltableswithkeys&callback=", [yqlQuery stringByAddingPercentEscapesUsingEncoding: NSASCIIStringEncoding]];
     NSLog(@"The url is %@", urlString);
     NSURL *yahooFinanaceRESTQueryURL = [NSURL URLWithString: urlString];
@@ -47,7 +53,7 @@ int main(void){
       // response.statusCode != 200 (400? 500?)
       NSLog(@"Could not fetch exchange rate. %@", error.description);
     }
-    NSLog(@"USD to CND rate is %@ fetched on %@", rate, lastFetchedOn);
+    NSLog(@"USD to %@ rate is %@ fetched on %@", inCode, rate, lastFetchedOn);
   }
   return 0;
 }
