@@ -15,17 +15,19 @@ Important Considerations:
 
 What to Look For in this Project:
 
-The most important location handling code is in the GetLocationViewController and TrackLocationViewController. "#pragma mark Location Manager Interactions" is used to demarcate the specific sections that create, configure, start, and stop the manager, and where its delegate methods are implemented. 
+The most important location handling code is in the GetLocationViewController and TrackLocationViewController. "#pragma mark Location Manager Interactions" is used to demarcate the specific sections that create, configure, start, and stop the manager, and where its delegate methods are implemented.
+
+This sample also makes use of “NSLocationWhenInUseUsageDescription” in its Info.plist together with CLLocationManager’s requestWhenInUseAuthorization method.
 
 ================================================================================
 BUILD REQUIREMENTS:
 
-iOS 4.0 or later
+iOS 8.0 SDK or later
 
 ================================================================================
 RUNTIME REQUIREMENTS:
 
-iPhone OS 3.2 or later
+iOS 7.0 or later
 
 ================================================================================
 PACKAGING LIST:
@@ -51,6 +53,9 @@ This is an Objective C category on the CLLocation class that extends the class b
 ================================================================================
 CHANGES FROM PREVIOUS VERSIONS:
 
+Version 2.3
+- Upgraded for the iOS 8 SDK, adopts current best practices for Objective-C (including use of properties, autosynthesis, and literals), now uses Storyboards and ARC (Automatic Reference Counting).
+
 Version 2.2
 - Updated for iOS 4.0.
 
@@ -65,4 +70,4 @@ Version 1.0
 - First version.
 
 ================================================================================
-Copyright (C) 2008-2010 Apple Inc. All rights reserved.
+Copyright (C) 2008-2014 Apple Inc. All rights reserved.
